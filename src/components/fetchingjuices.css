@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+    margin: 10px;
+    padding: 14px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.list-item{
+    width: 300px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 40px auto;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.card img:hover{
+    box-shadow: 10px 10px 10px grey;
+}
+
+@media screen and (max-width:768px) {
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 70%;
+    }
+}
